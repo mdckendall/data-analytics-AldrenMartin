@@ -35,7 +35,7 @@ class data {
         break;
         
        case 4:
-          while(fileScanner.hasNext()){
+          while(fileScanner.hasNextLine()){
             
             arrayList.add(fileScanner.nextLine());
 
