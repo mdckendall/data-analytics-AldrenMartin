@@ -39,10 +39,10 @@ class data {
             
             arrayList.add(fileScanner.nextLine());
 
-
+          }
         System.out.println(arrayList);
         break;
-          }
+          
          
         case 5:
             System.exit(0);
