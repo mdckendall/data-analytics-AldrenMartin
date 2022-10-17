@@ -9,6 +9,7 @@ class data {
 		ArrayList<String> arrayList = new ArrayList<>();
 		FileReader fr = new FileReader("names.txt");
 		Scanner fileScanner = new Scanner(fr);
+    arrayList.add(fileScanner.nextLine());
 		Scanner in = new Scanner(System.in);
 
 
@@ -35,14 +36,33 @@ class data {
         break;
         
        case 4:
-          while(fileScanner.hasNextLine()){
-            
-            arrayList.add(fileScanner.nextLine());
+          System.out.println("Current Students:");
+       //
+    // for (String AL : arrayList);
+    //    System.out.println(AL);
+    //   }
 
-          }
-        System.out.println(arrayList);
+       //int size = arrayList.size();
+      // arrayList.add(fileScanner.nextLine());
+     //  for (int i = 0; i <size; i++){
+         //System.out.println(arrayList.get(i).toString());
+
+       //}
+        //for (String arrayLis : arrayList){ 
+        //  arrayList.add(fileScanner.nextLine());
+      //  System.out.println(arrayLis);
+       // }
+       
+       while(fileScanner.hasNextLine()){ 
+        arrayList.add(fileScanner.next());
+      }
+      fileScanner.close();
+        System.out.println(arrayList); 
+
+
+       
         break;
-          
+        
          
         case 5:
             System.exit(0);
